@@ -1,0 +1,17 @@
+.left-container {
+    background-color: rgb(52, 3, 89);
+    color: white;
+}
+
+.left-container .secondary-color {
+    color: rgb(137, 33, 216)
+}
+
+.right-container {
+    background-image: url(images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(56, 2, 97);
+    background-blend-mode: overlay;
+    opacity: 0.8;
+}
