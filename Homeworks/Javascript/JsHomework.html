@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript homework</title>
+</head>
+
+<body>
+    <script>
+        var choice = ["rock", "paper", "scissors"];
+        var computerChoice = choice[Math.floor(choice.length * Math.random())];
+        var userChoice = choice[Math.floor(choice.length * Math.random())];
+        var result = play(computerChoice, userChoice)
+
+        function play(computerChoice, userChoice) {
+            if (computerChoice === userChoice) {
+                return "The result is a tie!";
+            }
+            if (computerChoice === "rock") {
+                if (userChoice === "scissors") {
+                    return "Computer wins";
+                } else {
+                    return "User wins";
+                }
+            }
+            if (computerChoice === "paper") {
+                if (userChoice === "rock") {
+                    return "Computer wins";
+                } else {
+                    if (userChoice === "scissors") {
+                        return "User wins";
+                    }
+                }
+            }
+            if (computerChoice === "scissors") {
+                    if (userChoice === "rock") {
+                        return "User wins";
+                    } else {
+                        if (userChoice === "paper") {
+                            return "Computer wins";
+                        }
+                    }
+                }
+            }
+        
+        console.log("User choice : " + userChoice);
+        console.log("Computer choice : " + computerChoice);
+        console.log(result);
+
+
+
+
+
+    </script>
+</body>
+
+</html>
